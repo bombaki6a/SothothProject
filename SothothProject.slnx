@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SothothProject.vcxproj" Id="7fbedd7c-6094-471c-9282-e8604b47782e" />
+</Solution>

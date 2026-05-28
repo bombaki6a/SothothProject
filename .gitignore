@@ -1,0 +1,41 @@
+# Visual Studio user/workspace files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs and intermediates
+Build/
+Debug/
+Release/
+x64/
+Win32/
+obj/
+bin/
+*.obj
+*.iobj
+*.ipdb
+*.pdb
+*.ilk
+*.lib
+*.exp
+*.res
+*.recipe
+*.tlog
+*.lastbuildstate
+*.log
+
+# Visual Studio generated resource/cache files
+*.aps
+*.ncb
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# OS/editor noise
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+*.swp
