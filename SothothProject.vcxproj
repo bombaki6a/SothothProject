@@ -187,6 +187,25 @@
   <ItemGroup>
     <Image Include="Assets\app.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Support\CollectorSupport.h" />
+    <ClCompile Include="Core\Support\CollectorSupport.cpp" />
+    <ClInclude Include="Core\Collectors\SystemCollector.h" />
+    <ClCompile Include="Core\Collectors\SystemCollector.cpp" />
+    <ClInclude Include="Core\Collectors\UserCollector.h" />
+    <ClCompile Include="Core\Collectors\UserCollector.cpp" />
+    <ClInclude Include="Core\Collectors\NetworkCollector.h" />
+    <ClCompile Include="Core\Collectors\NetworkCollector.cpp" />
+    <ClInclude Include="Core\Collectors\EncryptionCollector.h" />
+    <ClCompile Include="Core\Collectors\EncryptionCollector.cpp" />
+    <ClInclude Include="Core\Reports\CollectionReport.h" />
+    <ClInclude Include="Core\Reports\ReportWriter.h" />
+    <ClCompile Include="Core\Reports\ReportWriter.cpp" />
+    <ClInclude Include="UI\ReportNameDialog.h" />
+    <ClCompile Include="UI\ReportNameDialog.cpp" />
+    <ClInclude Include="UI\StartupDialog.h" />
+    <ClCompile Include="UI\StartupDialog.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

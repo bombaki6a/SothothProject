@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
@@ -75,5 +75,32 @@
     <Image Include="Assets\app.ico">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\Core\Collectors"><UniqueIdentifier>{A265EF13-741A-4D12-8B63-000000000000}</UniqueIdentifier></Filter>
+    <Filter Include="Header Files\Core\Collectors"><UniqueIdentifier>{A265EF13-741A-4D12-8B63-000000000001}</UniqueIdentifier></Filter>
+    <Filter Include="Source Files\Core\Support"><UniqueIdentifier>{A265EF13-741A-4D12-8B63-000000000002}</UniqueIdentifier></Filter>
+    <Filter Include="Header Files\Core\Support"><UniqueIdentifier>{A265EF13-741A-4D12-8B63-000000000003}</UniqueIdentifier></Filter>
+    <Filter Include="Source Files\Core\Reports"><UniqueIdentifier>{A265EF13-741A-4D12-8B63-000000000004}</UniqueIdentifier></Filter>
+    <Filter Include="Header Files\Core\Reports"><UniqueIdentifier>{A265EF13-741A-4D12-8B63-000000000005}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Support\CollectorSupport.h"><Filter>Header Files\Core\Support</Filter></ClInclude>
+    <ClCompile Include="Core\Support\CollectorSupport.cpp"><Filter>Source Files\Core\Support</Filter></ClCompile>
+    <ClInclude Include="Core\Collectors\SystemCollector.h"><Filter>Header Files\Core\Collectors</Filter></ClInclude>
+    <ClCompile Include="Core\Collectors\SystemCollector.cpp"><Filter>Source Files\Core\Collectors</Filter></ClCompile>
+    <ClInclude Include="Core\Collectors\UserCollector.h"><Filter>Header Files\Core\Collectors</Filter></ClInclude>
+    <ClCompile Include="Core\Collectors\UserCollector.cpp"><Filter>Source Files\Core\Collectors</Filter></ClCompile>
+    <ClInclude Include="Core\Collectors\NetworkCollector.h"><Filter>Header Files\Core\Collectors</Filter></ClInclude>
+    <ClCompile Include="Core\Collectors\NetworkCollector.cpp"><Filter>Source Files\Core\Collectors</Filter></ClCompile>
+    <ClInclude Include="Core\Collectors\EncryptionCollector.h"><Filter>Header Files\Core\Collectors</Filter></ClInclude>
+    <ClCompile Include="Core\Collectors\EncryptionCollector.cpp"><Filter>Source Files\Core\Collectors</Filter></ClCompile>
+    <ClInclude Include="Core\Reports\CollectionReport.h"><Filter>Header Files\Core\Reports</Filter></ClInclude>
+    <ClInclude Include="Core\Reports\ReportWriter.h"><Filter>Header Files\Core\Reports</Filter></ClInclude>
+    <ClCompile Include="Core\Reports\ReportWriter.cpp"><Filter>Source Files\Core\Reports</Filter></ClCompile>
+    <ClInclude Include="UI\ReportNameDialog.h"><Filter>Header Files\UI</Filter></ClInclude>
+    <ClCompile Include="UI\ReportNameDialog.cpp"><Filter>Source Files\UI</Filter></ClCompile>
+    <ClInclude Include="UI\StartupDialog.h"><Filter>Header Files\UI</Filter></ClInclude>
+    <ClCompile Include="UI\StartupDialog.cpp"><Filter>Source Files\UI</Filter></ClCompile>
   </ItemGroup>
 </Project>

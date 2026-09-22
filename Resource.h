@@ -3,6 +3,10 @@
 // Used by SothothProject.rc
 
 #define IDS_APP_TITLE			103
+#define IDD_STARTUP 110
+#define IDC_CATEGORY_FIRST 1200
+#define IDC_STARTUP_LOGO 1204
+#define IDC_STARTUP_STATUS 1205
 
 #define IDD_REPORT_NAME			104
 #define IDI_SOTHOTHPROJECT			107

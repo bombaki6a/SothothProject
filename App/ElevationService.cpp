@@ -10,6 +10,7 @@ namespace
 {
 constexpr wchar_t kElevationAttemptSwitch[] = L"--elevation-attempted";
 
+/// Checks the elevation-attempt marker to prevent a relaunch loop.
 bool CurrentCommandLineHasSwitch(const wchar_t* expectedSwitch)
 {
     int argumentCount = 0;
@@ -36,6 +37,7 @@ bool CurrentCommandLineHasSwitch(const wchar_t* expectedSwitch)
 
 namespace Sothoth::App
 {
+/// Checks effective membership in the local administrators group using the process token.
 bool CurrentProcessHasAdministratorRights()
 {
     SID_IDENTIFIER_AUTHORITY ntAuthority = SECURITY_NT_AUTHORITY;
@@ -64,6 +66,7 @@ bool CurrentProcessHasAdministratorRights()
     return membershipResult == TRUE && isMember == TRUE;
 }
 
+/// Offers a UAC relaunch once; a declined prompt lets the current process continue.
 bool TryRelaunchElevatedAndExitCurrentIfAccepted(const wchar_t* commandLine)
 {
     if (CurrentProcessHasAdministratorRights() || CurrentCommandLineHasSwitch(kElevationAttemptSwitch))
@@ -90,6 +93,7 @@ bool TryRelaunchElevatedAndExitCurrentIfAccepted(const wchar_t* commandLine)
     return launchResult > 32;
 }
 
+/// Formats the privilege indicator shown alongside report status.
 std::wstring BuildPrivilegeStateText(bool isElevated)
 {
     return isElevated ? L"Administrator: Yes" : L"Administrator: No";

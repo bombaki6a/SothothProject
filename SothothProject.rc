@@ -34,6 +34,22 @@ IDI_SOTHOTHPROJECT       ICON         "Assets\\app.ico"
 // Dialog
 //
 
+IDD_STARTUP DIALOGEX 0, 0, 230, 88
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tenta Trace"
+FONT 9, "Segoe UI"
+BEGIN
+    CONTROL "", IDC_STARTUP_LOGO, "STATIC", SS_ICON | SS_CENTERIMAGE, 10, 8, 42, 42
+    CONTROL "SYSTEM", 1200, "BUTTON", BS_AUTOCHECKBOX | WS_TABSTOP, 64, 12, 72, 12
+    CONTROL "USERS", 1201, "BUTTON", BS_AUTOCHECKBOX | WS_TABSTOP, 142, 12, 78, 12
+    CONTROL "NETWORK", 1202, "BUTTON", BS_AUTOCHECKBOX | WS_TABSTOP, 64, 32, 72, 12
+    CONTROL "ENCRYPTION", 1203, "BUTTON", BS_AUTOCHECKBOX | WS_TABSTOP, 142, 32, 78, 12
+    LTEXT "", IDC_STARTUP_STATUS, 10, 50, 210, 12
+    PUSHBUTTON "Cancel", IDCANCEL, 62, 64, 60, 16
+    DEFPUSHBUTTON "Generate Report", IDOK, 130, 64, 90, 16
+END
+
 IDD_REPORT_NAME DIALOGEX 0, 0, 220, 68
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Create Report"
@@ -104,8 +120,8 @@ BEGIN
 END
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,0
- PRODUCTVERSION 1,0,0,0
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS VS_FF_DEBUG
@@ -122,12 +138,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "Steliyan Dobrev\0"
             VALUE "FileDescription", "Tenta Trace\0"
-            VALUE "FileVersion", "1.0.0.0\0"
+            VALUE "FileVersion", "2.0.0.0\0"
             VALUE "InternalName", "SothothProject\0"
             VALUE "LegalCopyright", "Copyright (c) 2026 Steliyan Dobrev\0"
             VALUE "OriginalFilename", "TT.exe\0"
             VALUE "ProductName", "Tenta Trace\0"
-            VALUE "ProductVersion", "1.0.0.0\0"
+            VALUE "ProductVersion", "2.0.0.0\0"
         END
     END
     BLOCK "VarFileInfo"
